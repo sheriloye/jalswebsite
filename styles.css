@@ -1,0 +1,174 @@
+:root{
+  --bg:#0b0f17;
+  --card:#0f1623;
+  --text:#e9eefb;
+  --muted:#a8b3cf;
+  --line:rgba(255,255,255,.10);
+
+  /* construction vibe accent */
+  --accent:#f59e0b;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: radial-gradient(900px 500px at 15% 5%, rgba(245,158,11,.18), transparent 55%),
+              radial-gradient(900px 500px at 80% 15%, rgba(255,255,255,.08), transparent 55%),
+              var(--bg);
+  color:var(--text);
+  line-height:1.55;
+}
+
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.92;text-decoration:underline}
+
+.container{width:min(1100px, 92%); margin:0 auto}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
+
+.topbar{
+  border-bottom:1px solid var(--line);
+  background: rgba(11,15,23,.7);
+  backdrop-filter: blur(10px);
+  font-size:14px;
+}
+.topbar .row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 0;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.pills{display:flex; gap:10px; flex-wrap:wrap}
+.pill{
+  border:1px solid var(--line);
+  padding:6px 10px;
+  border-radius:999px;
+  background: rgba(255,255,255,.03);
+}
+
+.header{
+  position:sticky; top:0; z-index:50;
+  border-bottom:1px solid var(--line);
+  background: rgba(11,15,23,.65);
+  backdrop-filter: blur(10px);
+}
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 0;
+  gap:16px;
+}
+.brand{
+  display:flex; align-items:center; gap:10px;
+  font-weight:900;
+  letter-spacing:.3px;
+}
+.brand .logo{
+  width:36px; height:36px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background: rgba(245,158,11,.15);
+  display:grid; place-items:center;
+  font-weight:900;
+}
+.navlinks{display:flex; gap:14px; flex-wrap:wrap}
+.navlinks a{color:var(--muted); font-size:14px}
+.navlinks a.active{color:var(--text); text-decoration:underline}
+
+.btn{
+  border:1px solid var(--line);
+  padding:10px 14px;
+  border-radius:12px;
+  font-weight:800;
+  font-size:14px;
+  background: rgba(255,255,255,.03);
+  display:inline-block;
+}
+.btn.primary{
+  border:1px solid rgba(245,158,11,.55);
+  background: linear-gradient(135deg, rgba(245,158,11,.35), rgba(255,255,255,.06));
+}
+.btn:hover{transform: translateY(-1px)}
+.btn:active{transform: translateY(0)}
+
+.card{
+  background: rgba(15,22,35,.72);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.22);
+}
+
+.section{padding:38px 0}
+.section-head{margin-bottom:14px}
+
+h1{margin:0 0 10px; font-size:44px; line-height:1.05}
+h2{margin:0 0 6px; font-size:24px}
+h3{margin:0 0 8px; font-size:16px}
+
+.hero{
+  padding:56px 0 30px;
+  display:grid;
+  grid-template-columns: 1.35fr .85fr;
+  gap:18px;
+  align-items:start;
+}
+.subtitle{margin:0 0 16px; color:var(--muted); font-size:16px}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:14px;
+}
+.two-col{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:14px;
+}
+
+.tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+.tag{
+  font-size:12px;
+  color:var(--muted);
+  border:1px solid var(--line);
+  padding:4px 8px;
+  border-radius:999px;
+  background: rgba(255,255,255,.03);
+}
+
+.form{display:grid; gap:10px}
+.input, textarea, select{
+  width:100%;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+  border-radius:12px;
+  padding:10px 12px;
+  font-size:14px;
+}
+textarea{min-height:110px; resize:vertical}
+
+.footer{
+  border-top:1px solid var(--line);
+  padding:22px 0 34px;
+  margin-top:18px;
+}
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+@media (max-width: 900px){
+  .hero{grid-template-columns: 1fr; padding-top:42px}
+  .grid{grid-template-columns: 1fr}
+  .two-col{grid-template-columns: 1fr}
+  h1{font-size:36px}
+}
