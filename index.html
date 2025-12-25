@@ -1,33 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pro Renovate | Construction & Renovations in Windsor, CT</title>
-  <meta name="description" content="Pro Renovate provides [Service 1], [Service 2], and [Service 3] in Windsor and surrounding areas. Free estimates. Licensed & insured." />
-  <meta name="description" content="[PAGE DESCRIPTION]" />
+  <title>Pro Renovate | Renovations, Basements, Painting & More</title>
+  <meta name="description" content="Pro Renovate provides full home renovations, basement finishing, plumbing, painting, drywall, and flooring installation & repairs in the Windsor area. Free estimates." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Top bar  -->
   <div class="topbar">
     <div class="container row">
       <div class="pills">
-        <span class="pill">📞 <strong>860-436-1402</strong></span>
-        <span class="pill">✉️ prorenovate.ct@gmail.com</span>
-        <span class="pill">📍 Serving: Windsor, CT </span>
+        <span class="pill">Phone: <strong>860-436-1402</strong></span>
+        <span class="pill">Email: prorenovate.ct@gmail.com</span>
+        <span class="pill">Serving: Windsor, CT (within 30 miles)</span>
+
       </div>
       <div class="muted small">Hours: Mon–Fri 8–5</div>
     </div>
   </div>
 
-  <!-- Header / Nav -->
   <header class="header">
     <div class="container nav">
       <a class="brand" href="index.html">
-        <span class="logo">J</span>
-        <span>[Company Name]</span>
+        <img
+          id="brandLogo"
+          class="logo-wordmark"
+          src="assets/logo2.png"
+          data-light="assets/logo2.png"
+          data-dark="assets/logo.png"
+          alt="Pro Renovate"
+        />
+        <span class="brand-name">Pro Renovate</span>
+
       </a>
 
       <nav class="navlinks">
@@ -38,180 +44,164 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <a class="btn primary" href="contact.html">Request a Quote</a>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn icon" type="button" aria-label="Toggle theme">🌙</button>
+        <a class="btn primary" href="contact.html">Request a Quote</a>
+      </div>
     </div>
   </header>
 
-  <!-- Main page content -->
-<main>
+  <main>
 
-  <!-- HERO -->
-  <section class="hero container">
-    <div>
-      <h1>Quality construction & renovations in <span style="color:var(--accent)">[City/Area]</span>.</h1>
-      <p class="subtitle">
-        JALS Construction helps homeowners and small businesses with
-        <strong>[Service 1]</strong>, <strong>[Service 2]</strong>, and <strong>[Service 3]</strong>.
-        Licensed & insured. Free estimates.
-      </p>
+    <!-- HERO -->
+    <section class="hero container">
+      <div>
+        <h1>Renovations done right—because <span style="color:var(--accent)">Every Detail Matters</span>.</h1>
+        <p class="subtitle">
+          Pro Renovate provides <strong>full home renovations</strong>, <strong>basement finishing</strong>,
+          <strong>plumbing</strong>, <strong>interior/exterior painting</strong>, <strong>drywall installation & repair</strong>,
+          and <strong>flooring installation & repairs</strong> across <strong>Windsor, CT (within 30 miles)</strong>.
+        </p>
 
-      <div style="display:flex; gap:12px; flex-wrap:wrap; margin: 12px 0 10px;">
-        <a class="btn primary" href="contact.html">Request a Free Quote</a>
-        <a class="btn" href="projects.html">View Our Work</a>
-      </div>
-
-      <div class="tags">
-        <span class="tag">Licensed & Insured</span>
-        <span class="tag">Free Estimates</span>
-        <span class="tag">Clear Timelines</span>
-        <span class="tag">Quality Materials</span>
-      </div>
-
-      <p class="small muted" style="margin-top:12px;">
-        Call or text: <strong>[Phone]</strong> • Email: <strong>[Email]</strong>
-      </p>
-    </div>
-
-    <aside class="card">
-      <h2 style="margin-top:0;">Get a quick estimate</h2>
-      <p class="muted">This is a placeholder form. We can connect it to email later.</p>
-
-      <form class="form">
-        <input class="input" placeholder="Name" />
-        <input class="input" placeholder="Phone" />
-        <select class="input">
-          <option>Service Needed</option>
-          <option>[Service 1]</option>
-          <option>[Service 2]</option>
-          <option>[Service 3]</option>
-        </select>
-        <textarea placeholder="Tell us about your project (details, measurements, photos, etc.)"></textarea>
-        <button class="btn primary" type="button">Submit (placeholder)</button>
-        <p class="small muted">Next step: we’ll make this send to your email.</p>
-      </form>
-    </aside>
-  </section>
-
-  <!-- SERVICES PREVIEW -->
-  <section class="section container">
-    <div class="section-head">
-      <h2>Services</h2>
-      <p class="muted">Reliable work for residential & commercial projects.</p>
-    </div>
-
-    <div class="grid">
-      <article class="card">
-        <h3>[Service 1]</h3>
-        <p class="muted">One sentence explaining what’s included and who it’s for.</p>
-        <div class="tags">
-          <span class="tag">Repairs</span>
-          <span class="tag">Install</span>
-          <span class="tag">Replace</span>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin: 12px 0 10px;">
+          <a class="btn primary" href="contact.html">Request a Free Quote</a>
+          <a class="btn" href="projects.html">View Our Work</a>
         </div>
-        <a class="small" href="services.html">Learn more →</a>
-      </article>
 
-      <article class="card">
-        <h3>[Service 2]</h3>
-        <p class="muted">One sentence explaining what’s included and who it’s for.</p>
         <div class="tags">
-          <span class="tag">Design</span>
-          <span class="tag">Build</span>
-          <span class="tag">Finish</span>
+          <span class="tag">Quality Finishes</span>
+          <span class="tag">Clean Job Sites</span>
+          <span class="tag">Clear Timelines</span>
+          <span class="tag">Strong Communication</span>
         </div>
-        <a class="small" href="services.html">Learn more →</a>
-      </article>
 
-      <article class="card">
-        <h3>[Service 3]</h3>
-        <p class="muted">One sentence explaining what’s included and who it’s for.</p>
-        <div class="tags">
-          <span class="tag">Concrete</span>
-          <span class="tag">Framing</span>
-          <span class="tag">Painting</span>
+        <p class="small muted" style="margin-top:12px;">
+          Call or text: <strong>860-436-1402</strong> • Email: <strong>prorenovate.ct@gmail.com</strong>
+        </p>
+      </div>
+
+      <aside class="card">
+        <h2 style="margin-top:0;">Quick Quote</h2>
+
+        <form class="form">
+          <input class="input" placeholder="Name" />
+          <input class="input" placeholder="Phone" />
+          <select class="input">
+            <option>Service Needed</option>
+            <option>Full Home Renovations</option>
+            <option>Basement Finishing</option>
+            <option>Plumbing</option>
+            <option>Painting (Interior/Exterior)</option>
+            <option>Drywall Install/Repair</option>
+            <option>Flooring Install/Repair</option>
+            <option>Other</option>
+          </select>
+          <textarea placeholder="Tell us about your project (details, timeline, photos, etc.)"></textarea>
+          <button class="btn primary" type="button">Submit</button>
+        </form>
+      </aside>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="section container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p class="muted">Residential & light commercial renovations and repairs.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Full Home Renovations</h3>
+          <p class="muted">Kitchen, bath, living spaces, updates, repairs—managed start to finish.</p>
+          <div class="tags">
+            <span class="tag">Planning</span>
+            <span class="tag">Build</span>
+            <span class="tag">Finish</span>
+          </div>
+          <a class="small" href="services.html">Learn more →</a>
+        </article>
+
+        <article class="card">
+          <h3>Basement Finishing</h3>
+          <p class="muted">Turn unfinished space into a comfortable living area—done clean and code-safe.</p>
+          <div class="tags">
+            <span class="tag">Drywall</span>
+            <span class="tag">Flooring</span>
+            <span class="tag">Paint</span>
+          </div>
+          <a class="small" href="services.html">Learn more →</a>
+        </article>
+
+        <article class="card">
+          <h3>Plumbing, Painting & Flooring</h3>
+          <p class="muted">The essentials: plumbing updates, interior/exterior paint, flooring install/repair.</p>
+          <div class="tags">
+            <span class="tag">Repairs</span>
+            <span class="tag">Install</span>
+            <span class="tag">Refresh</span>
+          </div>
+          <a class="small" href="services.html">Learn more →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section class="section container">
+      <div class="section-head">
+        <h2>Featured Work</h2>
+      </div>
+
+      <div class="grid">
+        <div class="tile">
+          <div class="fake-photo"></div>
+          <div class="tile-body">
+            <h3>[Project Title]</h3>
+            <p class="muted">[City] • [Service Type] • [Timeline]</p>
+            <p class="muted">Goal → work completed → result (2 sentences).</p>
+          </div>
         </div>
-        <a class="small" href="services.html">Learn more →</a>
-      </article>
-    </div>
-  </section>
 
-  <!-- FEATURED PROJECTS -->
-  <section class="section container">
-    <div class="section-head">
-      <h2>Featured Work</h2>
-      <p class="muted">Add real photos later in <code>/assets</code> and we’ll turn these into a gallery.</p>
-    </div>
+        <div class="tile">
+          <div class="fake-photo"></div>
+          <div class="tile-body">
+            <h3>[Project Title]</h3>
+            <p class="muted">[City] • [Service Type] • [Timeline]</p>
+            <p class="muted">Goal → work completed → result (2 sentences).</p>
+          </div>
+        </div>
 
-    <div class="grid">
-      <article class="card">
-        <h3>[Project Title]</h3>
-        <p class="muted">[City] • [Service Type] • [Timeline]</p>
-        <p class="muted">Goal → work completed → result (2 sentences).</p>
-      </article>
-
-      <article class="card">
-        <h3>[Project Title]</h3>
-        <p class="muted">[City] • [Service Type] • [Timeline]</p>
-        <p class="muted">Goal → work completed → result (2 sentences).</p>
-      </article>
-
-      <article class="card">
-        <h3>[Project Title]</h3>
-        <p class="muted">[City] • [Service Type] • [Timeline]</p>
-        <p class="muted">Goal → work completed → result (2 sentences).</p>
-      </article>
-    </div>
-
-    <div style="margin-top:12px;">
-      <a class="btn" href="projects.html">See all projects</a>
-    </div>
-  </section>
-
-  <!-- WHY US -->
-  <section class="section container">
-    <div class="section-head">
-      <h2>Why homeowners choose us</h2>
-      <p class="muted">Straightforward pricing, quality craftsmanship, and clean job sites.</p>
-    </div>
-
-    <div class="two-col">
-      <div class="card">
-        <h3>Clear estimates</h3>
-        <p class="muted">We provide written quotes, scope details, and realistic timelines.</p>
+        <div class="tile">
+          <div class="fake-photo"></div>
+          <div class="tile-body">
+            <h3>[Project Title]</h3>
+            <p class="muted">[City] • [Service Type] • [Timeline]</p>
+            <p class="muted">Goal → work completed → result (2 sentences).</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Quality workmanship</h3>
-        <p class="muted">We focus on durable materials and clean finishing details.</p>
-      </div>
-      <div class="card">
-        <h3>Communication</h3>
-        <p class="muted">You’ll always know what’s next and when we’re arriving.</p>
-      </div>
-      <div class="card">
-        <h3>Respect for your space</h3>
-        <p class="muted">We keep the job site organized and do a final walkthrough.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- CTA -->
-  <section class="section container">
-    <div class="card">
-      <h2>Ready to start?</h2>
-      <p class="muted">Tell us what you need — we’ll reply within <strong>[X hours]</strong>.</p>
-      <a class="btn primary" href="contact.html">Request a Quote</a>
-    </div>
-  </section>
+      <div style="margin-top:12px;">
+        <a class="btn" href="projects.html">See all projects</a>
+      </div>
+    </section>
 
-</main>
+    <!-- CTA -->
+    <section class="section container">
+      <div class="card">
+        <h2>Ready to start?</h2>
+        <p class="muted">Send us a message and we’ll reply within <strong>24 hours</strong>.</p>
+        <a class="btn primary" href="contact.html">Request a Quote</a>
+      </div>
+    </section>
 
-  <!-- Footer -->
+  </main>
+
   <footer class="footer">
     <div class="container footer-inner">
       <div>
         <strong>Pro Renovate</strong>
-        <div class="small muted">Windsor • (860)-436-1402 • prorenovate.ct@gmail.com</div>
-        <div class="small muted">License: [#] • Insured: Yes</div>
+        <div class="small muted">Windsor, CT • 860-436-1402 • prorenovate.ct@gmail.com</div>
+        <div class="small muted">“Every Detail Matters.”</div>
       </div>
       <div class="small muted">© <span id="year"></span> Pro Renovate</div>
     </div>

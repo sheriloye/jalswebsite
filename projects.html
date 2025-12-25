@@ -1,33 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[PAGE TITLE] | [Company Name]</title>
-  <meta name="description" content="[PAGE DESCRIPTION]" />
+  <title>Projects | Pro Renovate</title>
+  <meta name="description" content="See recent renovation, basement finishing, painting, drywall, plumbing, and flooring projects by Pro Renovate in [City/Area]." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Top bar (optional but nice) -->
   <div class="topbar">
     <div class="container row">
       <div class="pills">
-        <span class="pill">📞 <strong>[Phone]</strong></span>
-        <span class="pill">✉️ [Email]</span>
-        <span class="pill">📍 Serving: [Service Area]</span>
+        <span class="pill">Phone: <strong>860-436-1402</strong></span>
+        <span class="pill">Email: prorenovate.ct@gmail.com</span>
+        <span class="pill">Serving: Windsor, CT (within 30 miles)</span>
       </div>
-      <div class="muted small">Hours: [Mon–Fri 8–5]</div>
+      <div class="muted small">Hours: Mon–Fri 8–5</div>
     </div>
   </div>
 
-  <!-- Header / Nav -->
   <header class="header">
     <div class="container nav">
       <a class="brand" href="index.html">
-        <span class="logo">J</span>
-        <span>[Company Name]</span>
-      </a>
+        <img
+          id="brandLogo"
+          class="logo-wordmark"
+          src="assets/logo2.png"
+          data-light="assets/logo2.png"
+          data-dark="assets/logo.png"
+          alt="Pro Renovate"
+        />
+        <span class="brand-name">Pro Renovate</span>
 
       <nav class="navlinks">
         <a href="index.html">Home</a>
@@ -37,30 +41,68 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <a class="btn primary" href="contact.html">Request a Quote</a>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn icon" type="button" aria-label="Toggle theme">🌙</button>
+        <a class="btn primary" href="contact.html">Request a Quote</a>
+      </div>
     </div>
   </header>
 
-  <!-- Main page content -->
   <main class="container section">
-    <div class="card">
-      <h1>[Page Heading]</h1>
-      <p class="muted">Replace this section with page content.</p>
+    <div class="section-head">
+      <h1 style="margin:0 0 8px;">Projects</h1>
     </div>
+
+    <section class="section">
+      <div class="grid">
+
+        <div class="tile">
+          <div class="fake-photo"></div>
+          <div class="tile-body">
+            <h3>[Basement Finishing]</h3>
+            <p class="muted">[City] • Basement • [Timeline]</p>
+            <p class="muted">Short result statement (before/after highlight).</p>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div class="fake-photo"></div>
+          <div class="tile-body">
+            <h3>[Full Home Renovation]</h3>
+            <p class="muted">[City] • Renovation • [Timeline]</p>
+            <p class="muted">Short result statement (before/after highlight).</p>
+          </div>
+        </div>
+
+        <div class="tile">
+          <div class="fake-photo"></div>
+          <div class="tile-body">
+            <h3>[Painting + Drywall]</h3>
+            <p class="muted">[City] • Paint/Drywall • [Timeline]</p>
+            <p class="muted">Short result statement (before/after highlight).</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="margin-top:14px;">
+        <a class="btn primary" href="contact.html">Request a Quote</a>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
       <div>
-        <strong>[Company Name]</strong>
-        <div class="small muted">[City, State] • [Phone] • [Email]</div>
-        <div class="small muted">License: [#] • Insured: [Yes/No]</div>
+        <strong>Pro Renovate</strong>
+        <div class="small muted">Windsor, CT • 860-436-1402 • prorenovate.ct@gmail.com</div>
+        <div class="small muted">“Every Detail Matters.”</div>
       </div>
-      <div class="small muted">© <span id="year"></span> [Company Name]</div>
+      <div class="small muted">© <span id="year"></span> Pro Renovate</div>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+

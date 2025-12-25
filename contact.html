@@ -1,33 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Pro Renovate</title>
-  <meta name="description" content="Request a free quote from Pro Renovate in Windsor and Hartford area. Call, email, or send a message online." />
-
+  <meta name="description" content="Request a free quote from Pro Renovate in the Windsor area. Call, email, or send a message." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Top bar  -->
   <div class="topbar">
     <div class="container row">
       <div class="pills">
-        <span class="pill">📞 <strong>860-436-1402</strong></span>
-        <span class="pill">✉️ prorenovate.ct@gmail.com</span>
-        <span class="pill">📍 Serving: Windsor, CT </span>
+        <span class="pill">Phone: <strong>860-436-1402</strong></span>
+        <span class="pill">Email: prorenovate.ct@gmail.com</span>
+        <span class="pill">Serving: Windsor, CT (within 30 miles)</span>
       </div>
       <div class="muted small">Hours: Mon–Fri 8–5</div>
     </div>
   </div>
 
-  <!-- Header / Nav -->
   <header class="header">
     <div class="container nav">
       <a class="brand" href="index.html">
-        <span class="logo">J</span>
-        <span>[Company Name]</span>
+        <img
+          id="brandLogo"
+          class="logo-wordmark"
+          src="assets/logo2.png"
+          data-light="assets/logo2.png"
+          data-dark="assets/logo.png"
+          alt="Pro Renovate"
+        />
+        <span class="brand-name">Pro Renovate</span>
+
       </a>
 
       <nav class="navlinks">
@@ -38,124 +43,99 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <a class="btn primary" href="contact.html">Request a Quote</a>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn icon" type="button" aria-label="Toggle theme">🌙</button>
+        <a class="btn primary" href="contact.html">Request a Quote</a>
+      </div>
     </div>
   </header>
 
-  <!-- Main page content -->
- <main class="container section">
+  <main class="container section">
 
-  <div class="section-head">
-    <h1 style="margin:0 0 8px;">Contact / Request a Quote</h1>
-    <p>
-      Tell us what you need and we’ll respond within <strong>24 hours</strong>.
-      For faster service, call or text <strong>(860)-436-1402</strong>.
-    </p>
-
-    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;">
-      <a class="btn primary" href="tel:[Phone]">Call Now</a>
-      <a class="btn" href="mailto:[Email]">Email Us</a>
-    </div>
-  </div>
-
-  <section class="section">
-    <div class="two-col">
-
-      <!-- CONTACT INFO -->
-      <aside class="card">
-        <h2>Contact Info</h2>
-
-        <div style="display:grid; gap:10px; margin-top:12px;">
-          <div class="pill"> <strong>Phone:</strong> <a href="tel:[Phone]">(860)-436-1402</a></div>
-          <div class="pill"> <strong>Email:</strong> <a href="mailto:[Email]">prorenovate.ct@gmail.com</a></div>
-          <div class="pill"> <strong>Service Area:</strong> Windsor + Surrounding Areas</div>
-          <div class="pill"> <strong>Hours:</strong> Mon–Fri 8am–5pm</div>
-        </div>
-
-        <div style="margin-top:14px;">
-          <h3>Prefer text?</h3>
-          <p >Text us a photo of the project and your address/zip for a faster estimate.</p>
-        </div>
-
-        <div style="margin-top:14px;">
-          <h3>Before we come out</h3>
-          <ul >
-            <li>Project location (zip is fine)</li>
-            <li>Photos/videos if you have them</li>
-            <li>What you want done + timeline</li>
-          </ul>
-        </div>
-      </aside>
-
-      <!-- QUOTE FORM -->
-      <section class="card">
-        <h2>Request a Free Quote</h2>
-
-        <form class="form" style="margin-top:12px;">
-          <input class="input" placeholder="Full Name" />
-          <input class="input" placeholder="Phone" />
-          <input class="input" placeholder="Email" />
-          <input class="input" placeholder="Project Address / Zip" />
-
-          <select class="input">
-            <option>Project Type</option>
-            <option>[Service 1]</option>
-            <option>[Service 2]</option>
-            <option>[Service 3]</option>
-            <option>Other</option>
-          </select>
-
-          <select class="input">
-            <option>Timeline</option>
-            <option>ASAP</option>
-            <option>1–3 weeks</option>
-            <option>1–2 months</option>
-            <option>Flexible</option>
-          </select>
-
-          <select class="input">
-            <option>Budget Range (optional)</option>
-            <option>Under $1,000</option>
-            <option>$1,000–$5,000</option>
-            <option>$5,000–$15,000</option>
-            <option>$15,000+</option>
-          </select>
-
-          <textarea placeholder="Describe what you need (details, measurements, materials, photos, etc.)"></textarea>
-
-          <button class="btn primary" type="button">Submit</button>
-
-          <p class="small muted">
-            Want this to actually send messages? Next we can connect it using a free form service
-            (Formspree / Netlify Forms / Google Forms).
-          </p>
-        </form>
-      </section>
-
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section">
-    <div class="card">
-      <h2>Need something urgent?</h2>
-      <p>
-        Call or text <strong>(860)-436-1402</strong> and include: your address/zip + a couple photos of the issue.
+    <div class="section-head">
+      <h1 style="margin:0 0 8px;">Request a Quote</h1>
+      <p class="muted">
+        Tell us what you need and we’ll respond within <strong>24 hours</strong>.
+        For faster service, call or text <strong>860-436-1402</strong>.
       </p>
-      <a class="btn primary" href="tel:[Phone]">Call Now</a>
+
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;">
+        <a class="btn primary" href="tel:860-436-1402">Call Now</a>
+        <a class="btn" href="mailto:prorenovate.ct@gmail.com">Email Us</a>
+      </div>
     </div>
-  </section>
 
- </main>
+    <section class="section">
+      <div class="two-col">
 
+        <aside class="card">
+          <h2>Contact Info</h2>
 
-  <!-- Footer -->
+          <div style="display:grid; gap:10px; margin-top:12px;">
+            <div class="pill"><strong>Phone:</strong> <a href="tel:[Phone]">860-436-1402</a></div>
+            <div class="pill"><strong>Email:</strong> <a href="mailto:[Email]">prorenovate.ct@gmail.com</a></div>
+            <div class="pill"><strong>Service Area:</strong> Windsor, CT (within 30 miles)</div>
+            <div class="pill"><strong>Hours:</strong> Mon–Fri 8–5</div>
+          </div>
+
+          <div style="margin-top:14px;">
+            <h3>Helpful info to include</h3>
+            <ul class="muted">
+              <li>Project location (zip is fine)</li>
+              <li>Photos/videos if you have them</li>
+              <li>What you want done + timeline</li>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="card">
+          <h2>Request a Free Quote</h2>
+        
+
+          <form class="form" style="margin-top:12px;">
+            <input class="input" placeholder="Full Name" />
+            <input class="input" placeholder="Phone" />
+            <input class="input" placeholder="Email" />
+            <input class="input" placeholder="Project Address / Zip" />
+
+            <select class="input">
+              <option>Project Type</option>
+              <option>Full Home Renovations</option>
+              <option>Basement Finishing</option>
+              <option>Plumbing</option>
+              <option>Painting (Interior/Exterior)</option>
+              <option>Drywall Install/Repair</option>
+              <option>Flooring Install/Repair</option>
+              <option>Other</option>
+            </select>
+
+            <select class="input">
+              <option>Timeline</option>
+              <option>ASAP</option>
+              <option>1–3 weeks</option>
+              <option>1–2 months</option>
+              <option>Flexible</option>
+            </select>
+
+            <textarea placeholder="Describe what you need (details, measurements, etc.)"></textarea>
+
+            <button class="btn primary" type="button">Submit</button>
+
+      
+          </form>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+
   <footer class="footer">
     <div class="container footer-inner">
       <div>
         <strong>Pro Renovate</strong>
-        <div class="small muted">Windsor • (860)-436-1402 • prorenovate.ct@gmail.com</div>
-        <div class="small muted">License: [#] • Insured: Yes</div>
+        <div class="small muted">Windsor, CT • 860-436-1402 • prorenovate.ct@gmail.com</div>
+        <div class="small muted">“Every Detail Matters.”</div>
       </div>
       <div class="small muted">© <span id="year"></span> Pro Renovate</div>
     </div>
@@ -164,3 +144,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
